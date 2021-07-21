@@ -1,13 +1,12 @@
 <script>
-	import Client from './client'
-	import  * as PrismicHelpers from "@prismicio/helpers";
-
-	async function getResponse() {
-	  let response = await Client().getSingle('blog_homepage');
-	  console.log (response)
-	  return response
-	  
-   }
+  import Client from './client'
+  import  * as PrismicHelpers from "@prismicio/helpers";
+  
+  async function getResponse() {
+    let response = await Client().getSingle('blog_homepage');
+	console.log (response)
+	return response
+  }
    const response = getResponse()
 </script>
 
